@@ -134,3 +134,20 @@ html,
 body {
   height: 100%;
 }
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
+  font-size: 1.6rem;
+}
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+#sidebar {
+  background: #363845;
+  color: #faf9f7;
+  width: 30%;
+  height: 100vh;
+}
