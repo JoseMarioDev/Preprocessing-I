@@ -155,6 +155,29 @@ body {
   font-size: 1.6rem;
 }
 
+////////////////////
+/// utilities
+//////////////////
+
+@background-color: #363845;
+@sidebar-font: #faf9f7;
+@banner-contact: #04728a;
+
+.banner {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 2rem 0;
+  padding: 1.5rem;
+}
+
+i {
+  font-size: 2rem;
+  margin: 2rem 2rem;
+}
+///////////////////
+
 .container {
   max-width: 120rem;
   margin: 0 auto;
@@ -165,4 +188,28 @@ body {
   color: @sidebar-font;
   width: 30%;
   height: 100vh;
+
+  .img-container {
+    width: 100%;
+  }
+
+  img {
+    width: 60%;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    padding: 1.5rem;
+  }
+}
+
+.contact-info {
+  .contact-banner {
+    background: @banner-contact;
+  }
+
+  .contact-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }
