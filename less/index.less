@@ -142,9 +142,6 @@ body {
 // start of my code/////////
 //////////////////////////
 
-@background-color: #363845;
-@sidebar-font: #faf9f7;
-
 html {
   font-size: 62.5%;
 }
@@ -162,6 +159,8 @@ body {
 @background-color: #363845;
 @sidebar-font: #faf9f7;
 @banner-contact: #04728a;
+@banner-languages: #aa053d;
+@banner-skills: #d76b05;
 
 .banner {
   text-transform: uppercase;
@@ -176,10 +175,26 @@ i {
   font-size: 2rem;
   margin: 2rem 2rem;
 }
+
+ul {
+  margin: 2rem 2rem;
+}
+li {
+  padding: 1rem;
+  text-transform: initial;
+}
+
+.content-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 ///////////////////
 
 .container {
-  max-width: 120rem;
+  background: lavender;
+  max-width: 100rem;
   margin: 0 auto;
 }
 
@@ -187,7 +202,7 @@ i {
   background: @background-color;
   color: @sidebar-font;
   width: 30%;
-  height: 100vh;
+    
 
   .img-container {
     width: 100%;
@@ -203,13 +218,19 @@ i {
 }
 
 .contact-info {
-  .contact-banner {
+  .content-banner {
     background: @banner-contact;
   }
+}
 
-  .contact-box {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+.languages {
+  .languages-banner {
+    background: @banner-languages;
+  }
+}
+
+.skills {
+  .skills-banner {
+    background: @banner-skills;
   }
 }

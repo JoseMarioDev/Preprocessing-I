@@ -153,15 +153,27 @@ i {
   font-size: 2rem;
   margin: 2rem 2rem;
 }
+ul {
+  margin: 2rem 2rem;
+}
+li {
+  padding: 1rem;
+  text-transform: initial;
+}
+.content-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
 .container {
-  max-width: 120rem;
+  background: lavender;
+  max-width: 100rem;
   margin: 0 auto;
 }
 #sidebar {
   background: #363845;
   color: #faf9f7;
   width: 30%;
-  height: 100vh;
 }
 #sidebar .img-container {
   width: 100%;
@@ -173,11 +185,12 @@ i {
   margin: 0 auto;
   padding: 1.5rem;
 }
-.contact-info .contact-banner {
+.contact-info .content-banner {
   background: #04728a;
 }
-.contact-info .contact-box {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+.languages .languages-banner {
+  background: #aa053d;
+}
+.skills .skills-banner {
+  background: #d76b05;
 }
