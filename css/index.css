@@ -164,11 +164,26 @@ h1 {
   font-size: 4rem;
   text-align: center;
   margin-bottom: 5rem;
+  font-weight: 500;
+}
+h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  text-decoration: underline;
+}
+h3 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
 }
 .content-box {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+hr {
+  border-top: 1px solid #fdfdfd;
 }
 .container {
   display: flex;
@@ -201,7 +216,7 @@ h1 {
   background: #d76b05;
 }
 #main {
-  padding: 2rem;
+  padding: 2rem 4rem;
   background: #faf9f7;
 }
 nav {
@@ -217,4 +232,13 @@ nav a {
 nav a:hover {
   background: #04728a;
   color: #faf9f7;
+}
+.intro p {
+  margin-bottom: 3rem;
+}
+.education {
+  margin-bottom: 4rem;
+}
+.education .education-entry {
+  margin-bottom: 2.5rem;
 }
