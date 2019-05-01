@@ -233,12 +233,13 @@ nav a {
   padding: 0.5rem 1rem;
 }
 nav a:hover {
-  background: #04728a;
+  background: #363845;
   color: #faf9f7;
 }
 .intro p {
   margin-bottom: 3rem;
 }
-.education {
+.education,
+.work-history {
   margin-bottom: 4rem;
 }
