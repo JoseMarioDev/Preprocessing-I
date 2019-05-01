@@ -158,7 +158,12 @@ ul {
 }
 li {
   padding: 1rem;
-  text-transform: initial;
+  text-transform: capitalize;
+}
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 5rem;
 }
 .content-box {
   display: flex;
@@ -166,9 +171,10 @@ li {
   align-items: center;
 }
 .container {
-  background: lavender;
+  display: flex;
   max-width: 100rem;
   margin: 0 auto;
+  overflow: hidden;
 }
 #sidebar {
   background: #363845;
@@ -193,4 +199,22 @@ li {
 }
 .skills .skills-banner {
   background: #d76b05;
+}
+#main {
+  padding: 2rem;
+  background: #faf9f7;
+}
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 5rem;
+}
+nav a {
+  text-decoration: none;
+  color: #363845;
+  padding: 0.5rem 1rem;
+}
+nav a:hover {
+  background: #04728a;
+  color: #faf9f7;
 }

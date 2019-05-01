@@ -156,11 +156,11 @@ body {
 /// utilities
 //////////////////
 
-@background-color: #363845;
-@sidebar-font: #faf9f7;
-@banner-contact: #04728a;
-@banner-languages: #aa053d;
-@banner-skills: #d76b05;
+@color-dark-grey: #363845;
+@color-snow-white: #faf9f7;
+@color-teal: #04728a;
+@color-dark-pink: #aa053d;
+@color-dark-orange: #d76b05;
 
 .banner {
   text-transform: uppercase;
@@ -179,9 +179,16 @@ i {
 ul {
   margin: 2rem 2rem;
 }
+
 li {
   padding: 1rem;
-  text-transform: initial;
+  text-transform: capitalize;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 5rem;
 }
 
 .content-box {
@@ -193,16 +200,16 @@ li {
 ///////////////////
 
 .container {
-  background: lavender;
+  display: flex;
   max-width: 100rem;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 #sidebar {
-  background: @background-color;
-  color: @sidebar-font;
+  background: @color-dark-grey;
+  color: @color-snow-white;
   width: 30%;
-    
 
   .img-container {
     width: 100%;
@@ -219,18 +226,45 @@ li {
 
 .contact-info {
   .content-banner {
-    background: @banner-contact;
+    background: @color-teal;
   }
 }
 
 .languages {
   .languages-banner {
-    background: @banner-languages;
+    background: @color-dark-pink;
   }
 }
 
 .skills {
   .skills-banner {
-    background: @banner-skills;
+    background: @color-dark-orange;
   }
+}
+
+////////////////////
+// nav
+////////////////////
+
+#main {
+  padding: 2rem;
+  background: @color-snow-white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 5rem;
+  a {
+    text-decoration: none;
+    color: @color-dark-grey;
+    padding: 0.5rem 1rem;
+  }
+  a:hover {
+    background: @color-teal;
+    color: @color-snow-white;
+  }
+}
+
+.intro {
 }
