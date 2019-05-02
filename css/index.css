@@ -177,14 +177,6 @@ h3 {
   font-weight: 500;
   margin-bottom: 0.5rem;
 }
-.content-box {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-.section-entry {
-  margin-bottom: 2.5rem;
-}
 hr {
   border-top: 1px solid #fdfdfd;
 }
@@ -208,6 +200,11 @@ hr {
   display: block;
   margin: 0 auto;
   padding: 1.5rem;
+}
+#sidebar .content-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 .contact-info .content-banner {
   background: #04728a;
@@ -238,6 +235,9 @@ nav a:hover {
 }
 .intro p {
   margin-bottom: 3rem;
+}
+.section-entry {
+  margin-bottom: 2rem;
 }
 .education,
 .work-history {

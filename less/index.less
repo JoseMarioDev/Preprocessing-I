@@ -205,15 +205,22 @@ h3 {
   font-weight: 500;
   margin-bottom: 0.5rem;
 }
+////////////////
+// MIXINS
+///////////
 
-.content-box {
+.content-flex() {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-.section-entry {
-  margin-bottom: 2.5rem;
+.mb2() {
+  margin-bottom: 2rem;
+}
+
+.mb4() {
+  margin-bottom: 4rem;
 }
 
 hr {
@@ -244,6 +251,9 @@ hr {
     display: block;
     margin: 0 auto;
     padding: 1.5rem;
+  }
+  .content-box {
+    .content-flex;
   }
 }
 
@@ -295,7 +305,11 @@ nav {
   }
 }
 
+.section-entry {
+  .mb2;
+}
+
 .education,
 .work-history {
-  margin-bottom: 4rem;
+  .mb4;
 }
